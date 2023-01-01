@@ -6,6 +6,8 @@ This is a python binding to the Rust library [rosu-pp](https://github.com/MaxOhn
 Since all the heavy lifting is done by Rust, rosu-pp-py comes with a very fast performance.
 Check out rosu-pp's [README](https://github.com/MaxOhn/rosu-pp/blob/main/README.md) for more info.
 
+if rosu-pp repository is changed. please use **cargo update -p rosu-pp** to update cargo.lock
+
 ## Exposed types
 
 The library exposes the following classes:
