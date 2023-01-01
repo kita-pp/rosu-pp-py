@@ -34,8 +34,10 @@ impl Display for PyStrains {
                 let OsuStrains {
                     section_len,
                     aim,
+                    aim_rx,
                     aim_no_sliders,
                     speed,
+                    speed_rx,
                     flashlight,
                 } = strains;
 
@@ -131,7 +133,9 @@ getters! {
     Osu {
         aim,
         aim_no_sliders,
+        aim_rx,
         speed,
+        speed_rx,
         flashlight,
     },
     Taiko {
