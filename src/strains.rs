@@ -42,7 +42,7 @@ impl Display for PyStrains {
                 } = strains;
 
                 debug.field("mode", &0_u8);
-                debug!(section_len, aim, aim_no_sliders, speed, flashlight);
+                debug!(section_len, aim, aim_no_sliders, aim_rx, speed, speed_rx, flashlight);
             }
             Strains::Taiko(strains) => {
                 let TaikoStrains {
