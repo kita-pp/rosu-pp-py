@@ -11,7 +11,7 @@ pub struct PyBeatmap {
 #[pymethods]
 impl PyBeatmap {
     #[new]
-    #[pyo3(signature = (**kwargs))]
+    #[args(kwargs = "**")]
     fn new(kwargs: Option<&PyDict>) -> PyResult<Self> {
         let kwargs = match kwargs {
             Some(kwargs) => kwargs,
