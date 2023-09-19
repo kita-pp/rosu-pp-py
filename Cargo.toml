@@ -1,8 +1,8 @@
 [package]
 name = "rosu-pp-py"
-version = "0.9.4"
+version = "1.0.2"
 description = "osu! difficulty and pp calculation for all modes"
-authors = ["Max Ohn <ohn.m@hotmail.de>"]
+authors = ["Max Ohn <ohn.m@hotmail.de>", "TuRou"]
 license = "MIT"
 edition = "2021"
 
@@ -12,7 +12,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.17", features = ["extension-module", "macros"] }
-rosu-pp = { git = "https://github.com/kita-pp/rosu-pp" }
+rosu-pp = { git = "https://github.com/ppy-sb/rosu-pp" }
 
 [profile.release]
 lto = "fat"

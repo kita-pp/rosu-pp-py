@@ -170,7 +170,7 @@ dependencies = [
 [[package]]
 name = "rosu-pp"
 version = "1.0.1"
-source = "git+https://github.com/kita-pp/rosu-pp#1b56a3c1ee13276f1a4d8f4218fcb074a1e1342a"
+source = "git+https://github.com/ppy-sb/rosu-pp#699c7dc1080b9964d8f886761b357efda4db2079"
 
 [[package]]
 name = "rosu-pp-py"
