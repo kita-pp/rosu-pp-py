@@ -196,7 +196,7 @@ checksum = "3c55926c8f0fed1db12fbe96f7a6083a2c4186443dd32532ab34e6902467a4f3"
 [[package]]
 name = "rosu-pp"
 version = "1.0.0"
-source = "git+https://github.com/ppy-sb/rosu-pp#55b2a5faf71e308015913f9446b7a4bb6b9b8e48"
+source = "git+https://github.com/ppy-sb/rosu-pp#92663912fce3fe4cad3739157f3be731d1980b98"
 dependencies = [
  "lazy_static",
  "rosu-map",
