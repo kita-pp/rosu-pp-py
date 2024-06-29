@@ -17,7 +17,7 @@ define_class! {
         pub aim_no_sliders: DoubleList?,
         pub speed: DoubleList?,
         pub flashlight: DoubleList?,
-        relax: DoubleList?,
+        pub relax: DoubleList?,
         pub color: DoubleList?,
         pub rhythm: DoubleList?,
         pub stamina: DoubleList?,

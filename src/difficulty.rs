@@ -7,12 +7,8 @@ use pyo3::{
 use rosu_pp::Difficulty;
 
 use crate::{
-    attributes::difficulty::PyDifficultyAttributes,
-    beatmap::PyBeatmap,
-    error::ArgsError,
-    gradual::{difficulty::PyGradualDifficulty, performance::PyGradualPerformance},
-    performance::PyPerformance,
-    strains::PyStrains,
+    attributes::difficulty::PyDifficultyAttributes, beatmap::PyBeatmap, error::ArgsError,
+    performance::PyPerformance, strains::PyStrains,
 };
 
 #[pyclass(name = "Difficulty")]
@@ -169,14 +165,6 @@ impl PyDifficulty {
             hardrock_offsets: *hardrock_offsets,
             ..PyPerformance::default()
         }
-    }
-
-    fn gradual_difficulty(&self, map: &PyBeatmap) -> PyGradualDifficulty {
-        PyGradualDifficulty::new(self, map)
-    }
-
-    fn gradual_performance(&self, map: &PyBeatmap) -> PyGradualPerformance {
-        PyGradualPerformance::new(self, map)
     }
 
     fn set_mods(&mut self, mods: Option<u32>) {
