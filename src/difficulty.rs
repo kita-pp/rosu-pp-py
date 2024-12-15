@@ -10,7 +10,6 @@ use crate::{
     attributes::difficulty::PyDifficultyAttributes,
     beatmap::PyBeatmap,
     error::ArgsError,
-    gradual::{difficulty::PyGradualDifficulty, performance::PyGradualPerformance},
     mods::PyGameMods,
     performance::PyPerformance,
     strains::PyStrains,
@@ -109,14 +108,6 @@ impl PyDifficulty {
             lazer: *lazer,
             ..PyPerformance::default()
         }
-    }
-
-    fn gradual_difficulty(&self, map: &PyBeatmap) -> PyGradualDifficulty {
-        PyGradualDifficulty::new(self, map)
-    }
-
-    fn gradual_performance(&self, map: &PyBeatmap) -> PyGradualPerformance {
-        PyGradualPerformance::new(self, map)
     }
 
     #[pyo3(signature = (mods=None))]

@@ -12,7 +12,6 @@ use self::{
     beatmap::PyBeatmap,
     difficulty::PyDifficulty,
     error::{ArgsError, ParseError},
-    gradual::{difficulty::PyGradualDifficulty, performance::PyGradualPerformance},
     mode::PyGameMode,
     performance::PyPerformance,
     score_state::PyScoreState,
@@ -26,7 +25,6 @@ mod attributes;
 mod beatmap;
 mod difficulty;
 mod error;
-mod gradual;
 mod mode;
 mod mods;
 mod performance;
@@ -38,8 +36,6 @@ fn rosu_pp_py(py: Python<'_>, m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_class::<PyBeatmap>()?;
     m.add_class::<PyDifficulty>()?;
     m.add_class::<PyPerformance>()?;
-    m.add_class::<PyGradualDifficulty>()?;
-    m.add_class::<PyGradualPerformance>()?;
     m.add_class::<PyBeatmapAttributesBuilder>()?;
 
     m.add_class::<PyGameMode>()?;

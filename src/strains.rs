@@ -17,6 +17,7 @@ define_class! {
         pub aim_no_sliders: DoubleList?,
         pub speed: DoubleList?,
         pub flashlight: DoubleList?,
+        pub relax: DoubleList?,
         pub color: DoubleList?,
         pub rhythm: DoubleList?,
         pub stamina: DoubleList?,
@@ -33,6 +34,7 @@ impl From<OsuStrains> for PyStrains {
             aim_no_sliders,
             speed,
             flashlight,
+            relax
         } = strains;
 
         Self {
@@ -42,6 +44,7 @@ impl From<OsuStrains> for PyStrains {
             aim_no_sliders: Some(aim_no_sliders),
             speed: Some(speed),
             flashlight: Some(flashlight),
+            relax: Some(relax),
             ..Self::default()
         }
     }
