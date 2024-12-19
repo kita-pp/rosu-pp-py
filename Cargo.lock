@@ -157,7 +157,7 @@ dependencies = [
 [[package]]
 name = "rosu-pp"
 version = "2.0.0"
-source = "git+https://github.com/ppy-sb/rosu-pp#acbea817e0f1b3a4efa8ee88b4353767d364cb6c"
+source = "git+https://github.com/ppy-sb/rosu-pp#f918f88f892ee1cdcde1727174d391b29925eb81"
 dependencies = [
  "lazy_static",
  "rosu-map",
